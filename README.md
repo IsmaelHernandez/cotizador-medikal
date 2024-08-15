@@ -1,30 +1,42 @@
-facturatech-quote-medikal
+# facturatech-quote-estimator
 
 This template should help get you started developing with Vue 3 in Vite.
-Recommended IDE Setup
 
-VSCode + Volar (and disable Vetur).
-Customize configuration
+## Recommended IDE Setup
 
-See Vite Configuration Reference.
-Project Setup
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-Node version: v20.14.0
+## Customize configuration
 
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+Node version: v20.11.0
+
+```sh
 npm install
+```
 
-Compile and Hot-Reload for Development
+### Compile and Hot-Reload for Development
 
+```sh
 npm run dev
+```
 
-Compile and Minify for Production
+### Compile and Minify for Production
 
+```sh
 npm run build
+```
 
-Run Unit Tests with Vitest
+### Run Unit Tests with [Vitest](https://vitest.dev/)
 
+```sh
 npm run test:unit
+```
 
-Lint with ESLint
+### Lint with [ESLint](https://eslint.org/)
 
+```sh
 npm run lint
+```
