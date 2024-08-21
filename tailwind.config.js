@@ -17,9 +17,11 @@ export default {
           600: '#121D39'
         },
         'white': {
+          50: '#FAFAFF',
           200: '#FFFFFF'
         },
         'aqua': {
+          50: '#E8F6F7',
           100: '#EEF9F9',
           200: '#89E3E7',
           300: '#00ABB3',
@@ -32,6 +34,9 @@ export default {
           300: '#BEB500',
           400: '#FAF2CB',
           500: '#999207'
+        },
+        'green': {
+          100: '#10C54E'
         }
       },
       fontFamily: {
