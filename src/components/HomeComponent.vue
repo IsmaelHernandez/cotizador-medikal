@@ -13,13 +13,13 @@
         </p>
         <div class="flex flex-row justify-center my-12 gap-[10px]">
           <button
-            @click="next"
+            @click="selectOptionMedikal(TYPE_PACKAGE.MEDIKAL)"
             class="w-[230px] h-[66px] rounded-[15px] bg-blue-500 text-white-200 text-[30px] font-bold font-roboto"
           >
             Medik
           </button>
           <button
-            @click="next"
+             @click="selectOptionMedikal(TYPE_PACKAGE.VITAL)"
             class="w-[230px] h-[66px] rounded-[15px] bg-white-200 text-blue-500 text-[30px] font-bold border-2 border-blue-500 font-roboto"
           >
             Vital
@@ -39,10 +39,20 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+import { useMedikalStore } from "../stores/medikalStore";
+import { ref } from 'vue';
+import { TYPE_PACKAGE } from '@/config/constants';
 
 const router = useRouter();
+const medikalStore = useMedikalStore();
 
-const next = () => {
-  router.push({ name: "form-medikal" });
+const selectOptionMedikal = (option) => {
+  medikalStore.type_package_medikal = option;
+  console.log( medikalStore.type_package_medikal);
+  if (option === TYPE_PACKAGE.MEDIKAL) {
+    router.push({ name: "form-medikal" });
+  } else if (option === TYPE_PACKAGE.VITAL) {
+    router.push({ name: "form-medikal" });
+  }
 };
 </script>

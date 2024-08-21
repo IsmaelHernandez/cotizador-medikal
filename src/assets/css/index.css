@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+i.bi.bi-check-circle-fill {
+    display: flex;
+    justify-content: end;
+}
